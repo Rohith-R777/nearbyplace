@@ -92,7 +92,7 @@ const HomePage = () => {
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Search & Filter Panel */}
         <div className="bg-dark-300 border border-gray-800 rounded-2xl p-6 mb-10">
-          <h3 className="text-white font-semibold text-lg mb-4">🔍 Search &amp; Filter</h3>
+          <h3 className="text-white font-semibold text-lg mb-4">🔍 Search & Filter</h3>
           <div className="flex flex-wrap gap-4 items-end">
             {/* Search input */}
             <div className="flex-1 min-w-48">
