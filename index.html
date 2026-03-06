@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NearbyPlace - Tourism Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🌍 NearbyPlace</h1>
+      <p class="tagline">Discover amazing places around you</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="search-section">
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for places (e.g., museum, park, restaurant)..."
+          aria-label="Search for nearby places"
+        >
+        <button id="search-btn" type="button">Search</button>
+        <button id="locate-btn" type="button" title="Use my location">📍</button>
+      </div>
+
+      <div id="category-filters" class="category-filters">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="temple">🛕 Temples</button>
+        <button class="category-btn" data-category="beach">🏖️ Beaches</button>
+        <button class="category-btn" data-category="park">🌳 Parks</button>
+        <button class="category-btn" data-category="museum">🏛️ Museums</button>
+        <button class="category-btn" data-category="restaurant">🍽️ Restaurants</button>
+        <button class="category-btn" data-category="monument">🏰 Monuments</button>
+      </div>
+    </section>
+
+    <section id="location-info" class="location-info hidden">
+      <p>📍 Showing places near: <span id="location-text"></span></p>
+    </section>
+
+    <section id="places-section">
+      <div id="places-grid" class="places-grid">
+        <!-- Places will be rendered here by JavaScript -->
+      </div>
+      <div id="no-results" class="no-results hidden">
+        <p>No places found matching your search. Try a different keyword or category.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 NearbyPlace Tourism Planner. Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/places-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
